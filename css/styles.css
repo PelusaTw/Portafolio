@@ -66,24 +66,20 @@ header{
 .menu li:hover a{
   color: #F7465B;
 }
-.menu .active {
-  color: black;
- 
-}
 .main {
-  margin:auto;
+  margin: 0 auto;
   width: 80vw;
   height: 80vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
   align-items: center;
+  justify-content: center;
   gap: 2em;
   color: white;
   font-weight: bold;
 }
 .info-content{
-  padding-top: 200px;
   text-align: center;
-  padding-left: 30%;
 }
 .info-content i{
   padding: 10px;
@@ -97,7 +93,6 @@ h1 {
   padding: 10px 20px;
   background-color: #F7465B;
   border: none;
-  border-radius: 20px;
   margin-top: 10px;
   cursor: pointer;
   -webkit-box-shadow: 1px 3px 11px -5px #F7465B;
@@ -109,12 +104,7 @@ h1 {
   background-color: #F7465B;
   box-shadow: none;
 }
-.main img {
-  border:  7px solid aqua;
-  width: 350px;
-  height: 520px;
-  z-index: 1;
-}
+
 .about {
   display: flex;
   width: 100vw;
@@ -145,22 +135,19 @@ h1 {
   margin-bottom: 1em;
 }
 .portfolio{
+  height: 80vh;
   display: flex;
   background: url(../img/wallpaperflare.com_wallpaper.jpg) no-repeat;
   background-size: cover;
   justify-content: center;
 }
-.portfolio{
-  width: 100vw;
-  color: #fff;
-}
-.contacto{
+.portfolio, .contact{
   width: 100vw;
   color: #fff;
 }
 
 .portfolio-heading {
-  width: 100vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,16 +163,16 @@ h1 {
   font-size: 2.5em;
   color: rgb(0, 0, 0);
   margin-left: 50px;
+  padding-top: 50px;
 }
 
 .portfolio .container {
   width: 80vw;
-  height: 80vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-right: 100px;
+  justify-content: center; 
+  flex-wrap: wrap;
 }
 
 .card {
@@ -303,7 +290,10 @@ h1 {
   font-weight: bold;
   color: black;
 }
-
+.submenu{
+  display: none;
+  color: black;
+}
   .principal {grid-area: 'principal';}
   .about {grid-area: 'about';}
   .portfolio {grid-area: 'portafolio';}
@@ -311,6 +301,36 @@ h1 {
   .footer {grid-area: 'footer';}
 
 @media  (max-width: 576px){
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .about img {
+    width: 80%;
+  }
+  .portfolio {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo{
+    display: none;
+  }
+  .navbar{
+   display: flex;
+   justify-content: space-around;
+  }
+  .navbar a{
+    font-size: medium;
+    margin: 10px;
+  }
+  .social, .container-contact{
+   display: flex;
+   flex-direction: column;
+  }
+  .contact-heading h2{
+    padding-left: 100px;
+  }
 
   }
   #page{
