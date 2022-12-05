@@ -11,13 +11,13 @@ html{
   box-sizing: border-box;
 }
 
-body {
+#page {
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
   height: 100vh;
 }
 
-.wrapper {
+.principal{
   width: 100vw;
   height: 100vh;
   background-color: white;
@@ -39,7 +39,7 @@ header{
   justify-content: space-between;
   padding: 2em;
 }
-.brand {
+.logo{
   font-weight: bold;
   color: black;
   background-color: #F7465B;
@@ -93,7 +93,7 @@ h1 {
   font-size: 3em;
 }
 
-.download-cv {
+.descargarcv {
   padding: 10px 20px;
   background-color: #F7465B;
   border: none;
@@ -152,12 +152,10 @@ h1 {
 }
 .portfolio{
   width: 100vw;
-  background-color: #191c32;
   color: #fff;
 }
-.contact-section {
+.contacto{
   width: 100vw;
-  background-color: #191c32;
   color: #fff;
 }
 
@@ -177,6 +175,7 @@ h1 {
 .contact-heading h2 {
   font-size: 2.5em;
   color: rgb(0, 0, 0);
+  margin-left: 50px;
 }
 
 .portfolio .container {
@@ -215,21 +214,8 @@ h1 {
   background-size: cover;
 }
 
-.card__title {
+.cardtitle {
   padding: 20px;
-}
-
-.card__proyect-links {
-  display: flex;
-  justify-content: space-evenly;
-}
-.card__proyect-links a {
-  color: black;
-  text-decoration: none;
-}
-
-.card__proyect-links i {
-  font-size: 1.5em;
 }
 
 .button-content {
@@ -257,6 +243,7 @@ h1 {
 }
 .social{
   display: inline-block;
+  padding-bottom: 200px;
   padding-right: 20%;
   gap: 50px;
   font-size: 6rem;
@@ -279,7 +266,7 @@ h1 {
   padding: 1.5em;
   background: none;
   border: 1px solid rgb(0, 0, 0);
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .form-group .input {
@@ -287,7 +274,7 @@ h1 {
   margin-bottom: 1em;
   background: none;
   border-bottom: 1px solid rgb(0, 0, 0);
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .form-group .btn-submit {
@@ -306,18 +293,9 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 200px;
+  height: 100px;
   padding: 2em;
   background-color:#F7465B;
-}
-
-.footer-content h2 {
-  font-size: 3em;
-}
-
-.footer-content h5 {
-  font-size: 1.5em;
-  text-align: center;
 }
 
 .copyright {
@@ -325,4 +303,26 @@ h1 {
   font-weight: bold;
   color: black;
 }
+
+  .principal {grid-area: 'principal';}
+  .about {grid-area: 'about';}
+  .portfolio {grid-area: 'portafolio';}
+  .contact {grid-area: 'contact';}
+  .footer {grid-area: 'footer';}
+
+@media  (max-width: 576px){
+
+  }
+  #page{
+    display: grid;
+    grid-template-areas:
+    'principal'
+    'about'
+    'portafolio'
+    'contact'
+    'footer';
+} 
+  
+
+  
 
