@@ -134,19 +134,19 @@ h1 {
 .about p {
   margin-bottom: 1em;
 }
-.portfolio{
+.portafolio{
   height: 80vh;
   display: flex;
   background: url(../img/wallpaperflare.com_wallpaper.jpg) no-repeat;
   background-size: cover;
   justify-content: center;
 }
-.portfolio, .contact{
+.portafolio, .contact{
   width: 100vw;
   color: #fff;
 }
 
-.portfolio-heading {
+.portafolio-titulo {
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -154,19 +154,19 @@ h1 {
 
 }
 
-.portfolio-heading h2{
+.portafolio-titulo h2{
   font-size: 2.5em;
   padding-left: 50px;
 }
 
-.contact-heading h2 {
+.contact-titulo h2 {
   font-size: 2.5em;
   color: rgb(0, 0, 0);
   margin-left: 50px;
   padding-top: 50px;
 }
 
-.portfolio .container {
+.portafolio .container {
   width: 80vw;
   margin: 0 auto;
   display: flex;
@@ -296,7 +296,7 @@ h1 {
 }
   .principal {grid-area: 'principal';}
   .about {grid-area: 'about';}
-  .portfolio {grid-area: 'portafolio';}
+  .portafolio {grid-area: 'portafolio';}
   .contact {grid-area: 'contact';}
   .footer {grid-area: 'footer';}
 
@@ -308,7 +308,7 @@ h1 {
   .about img {
     width: 80%;
   }
-  .portfolio {
+  .portafolio {
     height: 120vh;
     display: flex;
     flex-direction: column;
